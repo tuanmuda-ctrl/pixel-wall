@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Pixel Wall — beli satu kotak kecil di internet. Rp20.000 per blok.">
+  <title>Pixel Wall — Satu Kotak di Internet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <a class="logo" href="#" aria-label="Pixel Wall beranda"><span class="logo-mark">▦</span> PIXEL WALL</a>
+      <a class="nav-link" href="#cara-kerja">Cara kerja</a>
+    </nav>
+    <div class="hero-content">
+      <p class="eyebrow">SATU INTERNET. BANYAK PEMILIK.</p>
+      <h1>Punya satu<br><span>kotak di internet.</span></h1>
+      <p class="lead">Sebuah dinding digital untuk brand, kreator, proyek, dan website. Pilih kotak, tampilkan identitasmu, lalu arahkan pengunjung ke situsmu.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#wall">Lihat dinding <span aria-hidden="true">↘</span></a>
+        <span class="price-note">Rp20.000 <small>/ blok 10 × 10 px</small></span>
+      </div>
+      <div class="hero-stats">
+        <div><strong id="total-count">100</strong><span>blok demo</span></div>
+        <div><strong id="available-count">94</strong><span>tersedia dalam demo</span></div>
+        <div><strong>Rp20 rb</strong><span>harga per blok</span></div>
+      </div>
+    </div>
+    <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+  </header>
+
+  <main>
+    <section class="wall-section" id="wall">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE WALL</p><h2>Tempat internet berkumpul.</h2></div>
+        <div class="wall-legend"><span><i class="legend-dot free"></i>Tersedia</span><span><i class="legend-dot sold"></i>Contoh terisi</span></div>
+      </div>
+      <div class="wall-shell">
+        <div class="wall-topline"><span><span class="live-dot"></span> DINDING DIGITAL</span><span>10 × 10 grid demo</span></div>
+        <div id="wall-grid" class="wall-grid" aria-label="Dinding kotak Pixel Wall"></div>
+        <div class="wall-bottomline"><span>Geser dan klik kotak untuk melihat detail.</span><span>Harga: Rp20.000 / blok</span></div>
+      </div>
+      <p class="prototype-note"><strong>Catatan prototipe:</strong> blok berwarna adalah contoh tautan, bukan pelanggan atau sponsor sungguhan. Tombol pembelian belum memproses pesanan atau pembayaran.</p>
+    </section>
+
+    <section class="how-section" id="cara-kerja">
+      <p class="eyebrow">SIMPLE BY DESIGN</p>
+      <h2>Kecil kotaknya.<br><span>Besar kemungkinan.</span></h2>
+      <div class="steps">
+        <article class="step"><span class="step-num">01</span><div class="step-icon">▦</div><h3>Pilih blok</h3><p>Pilih kotak yang tersedia di dinding digital.</p></article>
+        <article class="step"><span class="step-num">02</span><div class="step-icon">↗</div><h3>Pasang identitas</h3><p>Tambahkan nama, gambar atau logo, dan tautan tujuan.</p></article>
+        <article class="step"><span class="step-num">03</span><div class="step-icon">◎</div><h3>Jangkau pengunjung</h3><p>Pengunjung mengeklik blok untuk membuka website tujuan.</p></article>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div><p class="eyebrow">PUNYA PERTANYAAN?</p><h2>Bangun sesuatu<br>yang bisa diklik.</h2><p class="cta-copy">Pixel Wall sedang dalam tahap prototipe. Fitur pembelian dan pembayaran akan ditambahkan setelah sistem pemesanan siap.</p></div>
+      <a class="button secondary" href="#wall">Jelajahi dinding ↗</a>
+    </section>
+  </main>
+
+  <footer><a class="logo" href="#"><span class="logo-mark">▦</span> PIXEL WALL</a><span>Prototipe awal · Belum menerima pembayaran</span><span>© <span id="year"></span> Pixel Wall</span></footer>
+
+  <dialog id="tile-dialog" class="tile-dialog">
+    <button class="dialog-close" id="dialog-close" aria-label="Tutup">×</button>
+    <p class="eyebrow" id="dialog-eyebrow">BLOK TERSEDIA</p>
+    <h2 id="dialog-title">Kotak #01</h2>
+    <p id="dialog-description">Satu blok berukuran 10 × 10 piksel.</p>
+    <div class="dialog-price">Rp20.000 <span>per blok</span></div>
+    <p class="dialog-note" id="dialog-note">Pembelian belum aktif. Ini hanya prototipe tampilan.</p>
+    <div class="dialog-actions"><button class="button primary" id="dialog-ok">Mengerti</button></div>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
